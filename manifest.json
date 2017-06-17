@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+
+	"name": "SP Notícias",
+	"description": "Esta extensão mostra as últimas notícias do Portal do Governo de São Paulo",
+	"version": "1.0",
+
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup.html",
+		"default_title": "Ver últimas notícias"
+	},
+
+	"permissions": [
+		"activeTab",
+		"http://www.saopaulo.sp.gov.br/wp-json/wp/v2/posts?categories=255"
+	]
+}
